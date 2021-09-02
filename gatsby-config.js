@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/colens-website",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "CoLens",
