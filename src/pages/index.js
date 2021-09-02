@@ -129,8 +129,14 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>CoLens Website</title>
-      CoLens Website
+      <title>Home Page</title>
+      <h1 style={headingStyles}>
+        CoLens Website
+        <br />
+        <span role="img" aria-label="Party popper emojis">
+          🎉🎉🎉
+        </span>
+      </h1>
     </main>
   )
 }
