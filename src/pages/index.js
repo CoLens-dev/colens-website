@@ -130,6 +130,7 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>CoLens Website</title>
+      CoLens Website
     </main>
   )
 }
