@@ -13,7 +13,12 @@
 
 2.  **Start developing**
 
-    - It's really simple: clone the repo, make changes and create PR which will be reviewed and eventually your changes will be merged into main branch
+    - It's really simple: 
+      - Clone the repo using `git clone`
+      - Run `npm install` to install all necessary packages
+      - Run `npm run develop` to start Gatsby dev server and enable live reload (by default page is served on localhost:8000)
+      - Make changes
+      - Create PR which will be reviewed and eventually your changes will be merged into main branch and available on the website!!!
 
 3.  **CI/CD**
 
