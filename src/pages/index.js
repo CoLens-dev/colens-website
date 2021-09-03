@@ -11,7 +11,7 @@ const logoStyles = {
 
 const IndexPage = () => {
   return (
-    <StaticImage src="../images/logo.jpg" alt="CoLens" style={logoStyles}/>
+    <StaticImage src="../../static/images/logo.jpg" alt="CoLens" style={logoStyles}/>
   )
 }
 
