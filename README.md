@@ -17,4 +17,4 @@
 
 3.  **CI/CD**
 
-    - GitHub actions and github pages are used to build this website. Specific branch `gh-pages` is the source for github pages deployment. Action is triggered on every merge to `main` branch after which changes should be visible on https://colens.space soon enough.
+    - GitHub actions and github pages are used to build this website. Specific branch `gh-pages` is the source for github pages deployment. Action is triggered on every merge to `main` branch after which changes should be visible on https://colens.space.
