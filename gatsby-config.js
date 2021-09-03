@@ -1,7 +1,7 @@
 const path = require(`path`);
 
 module.exports = {
-  pathPrefix: "/colens-website",
+  pathPrefix: `/colens-website`,
   siteMetadata: {
     siteUrl: "https://www.colens.space",
     title: "CoLens",
