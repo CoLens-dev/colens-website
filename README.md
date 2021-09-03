@@ -11,7 +11,7 @@
     - For our website we are using Gatsby and Github actions
 
 
-2.  **Start developing**
+2.  **Start Developing**
 
     - It's really simple: 
       - Clone the repo using `git clone`
