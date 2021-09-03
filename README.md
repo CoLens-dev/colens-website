@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.colens.space">
-    <img alt="CoLens" src="./src/images/logo.jpg" width="400" />
+    <img alt="CoLens" src="./static/images/logo.jpg" width="400" />
   </a>
 </p>
 
