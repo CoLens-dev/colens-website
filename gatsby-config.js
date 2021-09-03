@@ -1,7 +1,9 @@
+const path = require(`path`);
+
 module.exports = {
   pathPrefix: "/colens-website",
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.colens.space",
     title: "CoLens",
   },
   plugins: [
@@ -20,5 +22,8 @@ module.exports = {
         icon: "src/images/logo.jpg",
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
