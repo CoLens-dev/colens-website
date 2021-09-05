@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { createGlobalStyle } from "styled-components"
 import LinkedInIcon from "../../static/images/linkedin.inline.svg";
+import MailIcon from "../../static/images/mail.inline.svg";
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -40,7 +41,7 @@ const letsTalk = {
   padding: "0 10px"
 }
 
-const linkedIn = {
+const icon = {
   padding: "0 10px",
   width: "25px"
 }
@@ -54,9 +55,9 @@ const IndexPage = () => {
           <StaticImage src="../../static/images/logo.jpg" alt="CoLens" style={logoStyles}/>
         </div>
         <footer style={footer}>
-          <div style={letsTalk}>colens3@gmail.com</div>
+          <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
           <div style={letsTalk}>|</div>
-          <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={linkedIn}/></a>
+          <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
         </footer>
       </div>
   )
