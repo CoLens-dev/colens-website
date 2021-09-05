@@ -54,8 +54,6 @@ const IndexPage = () => {
           <StaticImage src="../../static/images/logo.jpg" alt="CoLens" style={logoStyles}/>
         </div>
         <footer style={footer}>
-          <div style={letsTalk}>Let's connect !</div>
-          <div style={letsTalk}>|</div>
           <div style={letsTalk}>colens3@gmail.com</div>
           <div style={letsTalk}>|</div>
           <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={linkedIn}/></a>
