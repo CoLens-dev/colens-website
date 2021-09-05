@@ -19,47 +19,39 @@ const logoStyles = {
   width: '40%'
 }
 
-const container = {
-  display: 'flex',
-  flexDirection: 'column',
-  minHeight: '100vh'
-}
-
-const content = {
-  flex: "1"
-}
-
 const footer = {
+  position: "fixed",
+  left: "0",
+  bottom: "0",
+  width: "100%",
   backgroundColor: "#FFC115",
   display: "flex",
   flexDirection: "row",
-  padding: "20px"
+  padding: "20px",
 }
 
-const letsTalk = {
+const separator = {
   fontSize: "20px",
   padding: "0 10px"
 }
 
 const icon = {
-  padding: "0 10px",
+  padding: "0 20px",
   width: "25px"
 }
 
 
 const IndexPage = () => {
   return (
-      <div style={container}>
+      <>
         <GlobalStyle/>
-        <div style={content}>
-          <StaticImage src="../../static/images/logo.jpg" alt="CoLens" style={logoStyles}/>
-        </div>
+        <StaticImage src="../../static/images/logo.jpg" alt="CoLens" style={logoStyles}/>
         <footer style={footer}>
           <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
-          <div style={letsTalk}>|</div>
+          <div style={separator}>|</div>
           <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
         </footer>
-      </div>
+      </>
   )
 }
 
