@@ -27,17 +27,18 @@ const footer = {
   backgroundColor: "#FFC115",
   display: "flex",
   flexDirection: "row",
-  padding: "20px",
+  padding: "20px 40px",
 }
 
 const separator = {
-  fontSize: "20px",
-  padding: "0 10px"
+  borderLeft: "2px solid black",
+  margin: "0 30px",
 }
 
 const icon = {
-  padding: "0 20px",
-  width: "25px"
+  display: "flex",
+  width: "25px",
+  justifyContent: "center"
 }
 
 
@@ -48,7 +49,7 @@ const IndexPage = () => {
         <StaticImage src="../../static/images/logo.jpg" alt="CoLens" style={logoStyles}/>
         <footer style={footer}>
           <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
-          <div style={separator}>|</div>
+          <div style={separator}/>
           <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
         </footer>
       </>
