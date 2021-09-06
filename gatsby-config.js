@@ -4,6 +4,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.colens.space",
     title: "CoLens",
+    description: "Software development company, turning light bulbs into awesome code",
+    url: "https://www.colens.space",
   },
   plugins: [
     "gatsby-plugin-styled-components",

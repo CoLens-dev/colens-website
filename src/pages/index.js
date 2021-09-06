@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 import LinkedInIcon from "../../static/images/linkedin.inline.svg";
 import MailIcon from "../../static/images/mail.inline.svg";
 
