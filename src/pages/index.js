@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 import LinkedInIcon from "../../static/images/linkedin.inline.svg";
 import MailIcon from "../../static/images/mail.inline.svg";
 
@@ -12,12 +13,15 @@ const GlobalStyle = createGlobalStyle`
 `
 
 // styles
-const logoStyles = {
-  display: 'flex',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  width: '40%'
-}
+const LogoContainer = styled.div`
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+`
 
 const footer = {
   position: "fixed",
@@ -46,7 +50,9 @@ const IndexPage = () => {
   return (
       <>
         <GlobalStyle/>
-        <StaticImage src="../../static/images/logo.jpg" alt="CoLens" style={logoStyles}/>
+        <LogoContainer>
+          <StaticImage src="../../static/images/logo.jpg" alt="CoLens"/>
+        </LogoContainer>
         <footer style={footer}>
           <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
           <div style={separator}/>
