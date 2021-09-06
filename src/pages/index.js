@@ -59,6 +59,7 @@ const IndexPage = () => {
           <div style={separator}/>
           <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
         </footer>
+
         <CookieConsent
           location="bottom"
           buttonText="Accept"
