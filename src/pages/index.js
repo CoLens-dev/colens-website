@@ -18,7 +18,7 @@ const LogoContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 45%;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width:632px) {
     width: 100%;
   }
 `
