@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
+import CookieConsent from 'react-cookie-consent';
 import LinkedInIcon from "../../static/images/linkedin.inline.svg";
 import MailIcon from "../../static/images/mail.inline.svg";
 
@@ -58,6 +59,18 @@ const IndexPage = () => {
           <div style={separator}/>
           <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
         </footer>
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          buttonStyle={{background: "#FFC115", borderRadius: "3px"}}
+          enableDeclineButton="True"
+          declineButtonText="Decline"
+          declineButtonStyle={{background: "#353535"}}
+          cookieName="gatsby-gdpr-google-analytics">
+          This website stores cookies on your computer. <br/>These cookies are used to collect information about how you interact with this website.
+          We use this information for analytics and metrics about our visitors on this website.
+          <br/>If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+        </CookieConsent>
       </>
   )
 }

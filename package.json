@@ -18,6 +18,7 @@
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^3.13.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-gdpr-cookies": "^2.0.6",
     "gatsby-plugin-google-analytics": "^3.13.0",
     "gatsby-plugin-hotjar": "^1.1.1",
     "gatsby-plugin-image": "^1.13.0",
@@ -31,6 +32,7 @@
     "gatsby-source-filesystem": "^3.13.0",
     "gatsby-transformer-sharp": "^3.13.0",
     "react": "^17.0.1",
+    "react-cookie-consent": "^6.3.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.1"

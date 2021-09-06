@@ -9,12 +9,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-206612752-1",
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -26,14 +20,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        includeInDevelopment: false,
-        id: 2586490,
-        sv: 6,
-      },
-    },
     {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
@@ -49,6 +35,24 @@ module.exports = {
           include: /\.inline\.svg$/
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-206612752-1',
+          cookieName: 'gatsby-gdpr-google-analytics',
+          anonymize: true,
+          allowAdFeatures: false
+        },
+        hotjar: {
+          hjid: '2586490',
+          hjsv: '6',
+          cookieName: 'gatsby-gdpr-hotjar',
+        },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
+    },
   ],
 };
