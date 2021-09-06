@@ -37,8 +37,13 @@ const footer = {
   padding: "20px 40px",
 }
 
+const letsConnectText = {
+  display: "flex",
+  alignItems: "center"
+}
+
 const separator = {
-  borderLeft: "2px solid black",
+  borderLeft: "1px solid black",
   margin: "0 30px",
 }
 
@@ -59,6 +64,8 @@ const IndexPage = () => {
           <StaticImage src="../../static/images/logo.jpg" alt="CoLens"/>
         </LogoContainer>
         <footer style={footer}>
+          <div style={letsConnectText}> LET'S CONNECT </div>
+          <div style={separator}/>
           <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
           <div style={separator}/>
           <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
