@@ -44,7 +44,8 @@ const separator = {
 
 const icon = {
   display: "flex",
-  width: "25px",
+  width: "30px",
+  height: "30px",
   justifyContent: "center"
 }
 
