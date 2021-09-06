@@ -42,15 +42,14 @@ module.exports = {
         googleAnalytics: {
           trackingId: 'UA-206612752-1',
           cookieName: 'gatsby-gdpr-google-analytics',
-          anonymize: true,
-          allowAdFeatures: false
+          includeInDevelopment: true,
+          head: true
         },
         hotjar: {
           hjid: '2586490',
           hjsv: '6',
           cookieName: 'gatsby-gdpr-hotjar',
         },
-        // defines the environments where the tracking should be available  - default is ["production"]
         environments: ['production', 'development']
       },
     },
