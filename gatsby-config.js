@@ -40,17 +40,16 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-206612752-1',
-          cookieName: 'gatsby-gdpr-google-analytics',
-          includeInDevelopment: true,
+          trackingId: `UA-206612752-1`,
+          cookieName: `gatsby-gdpr-google-analytics`,
           head: true
         },
         hotjar: {
-          hjid: '2586490',
-          hjsv: '6',
-          cookieName: 'gatsby-gdpr-hotjar',
+          hjid: `2586490`,
+          hjsv: `6`,
+          cookieName: `gatsby-gdpr-hotjar`,
         },
-        environments: ['production', 'development']
+        environments: [`production`, `development`]
       },
     },
   ],
