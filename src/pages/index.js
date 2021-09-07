@@ -36,9 +36,9 @@ const LogoContainerScreen = styled.div`
 
 const LogoContainerMobile = styled.div`
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   width: 80%;
   visibility: hidden;
 
