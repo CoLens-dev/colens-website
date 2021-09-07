@@ -134,13 +134,13 @@ const IndexPage = () => {
           enableDeclineButton="True"
           declineButtonText="Decline"
           declineButtonStyle={{background: "#353535"}}
+          style={{fontSize: "14px", lineHeight: 1.6}}
           cookieName="gatsby-gdpr-google-analytics"
           onAccept={() => {
             initializeAndTrack(location) 
           }}>
-          This website stores cookies on your computer. <br/>These cookies are used to collect information about how you interact with this website.
-          We use this information for analytics and metrics about our visitors on this website.
-          <br/>If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+          This website stores cookies on your computer. These cookies are used to collect information about how you interact with this website.
+          We use this information for analytics and metrics about our visitors on this website. If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
         </CookieConsent>
       </>
   )
