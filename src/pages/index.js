@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-// styles
 const LogoContainerScreen = styled.div`
   position: fixed;
   top: 50%;
@@ -48,16 +47,31 @@ const LogoContainerMobile = styled.div`
   }
 `
 
-const footer = {
-  position: "fixed",
-  left: "0",
-  bottom: "0",
-  width: "100%",
-  backgroundColor: "#FFC115",
-  display: "flex",
-  flexDirection: "row",
-  padding: "20px 40px",
-}
+const Footer = styled.div`
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFC115;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
+const LetsConnectContainer = styled.div`
+  display: flex;
+  padding-left: 20px;
+
+  @media screen and (max-width: 780px) {
+    padding-left: 0;
+  }
+`
 
 const letsConnectText = {
   display: "flex",
@@ -76,6 +90,17 @@ const icon = {
   justifyContent: "center"
 }
 
+const Copyright = styled.div`
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+
+  @media screen and (max-width: 780px) {
+    padding-right: 0;
+    padding-top: 15px;
+  }
+`
+
 
 const IndexPage = () => {
   const location = useLocation()
@@ -88,13 +113,18 @@ const IndexPage = () => {
         <LogoContainerMobile>
           <LogoIconMobile></LogoIconMobile>
         </LogoContainerMobile>
-        <footer style={footer}>
-          <div style={letsConnectText}> LET'S CONNECT </div>
-          <div style={separator}/>
-          <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
-          <div style={separator}/>
-          <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
-        </footer>
+        <Footer>
+          <LetsConnectContainer>
+            <div style={letsConnectText}> LET'S CONNECT </div>
+            <div style={separator}/>
+            <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
+            <div style={separator}/>
+            <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
+          </LetsConnectContainer>
+          <Copyright>
+            <small>&copy; Copyright 2021, CoLens, All Rights Reserved</small>
+          </Copyright>
+        </Footer>
 
         <CookieConsent
           overlay
