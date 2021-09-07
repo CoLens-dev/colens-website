@@ -122,7 +122,7 @@ const IndexPage = () => {
             <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
           </LetsConnectContainer>
           <Copyright>
-            <small>&copy; Copyright 2021, CoLens, All Rights Reserved</small>
+            <small>&copy; Copyright {new Date().getFullYear()}, CoLens, All Rights Reserved</small>
           </Copyright>
         </Footer>
 
