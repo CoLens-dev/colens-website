@@ -17,7 +17,6 @@ module.exports = {
         icon: "static/images/icon.png",
       },
     },
-    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {

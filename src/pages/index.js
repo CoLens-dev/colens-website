@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { useLocation } from "@reach/router"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
@@ -7,6 +6,8 @@ import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import CookieConsent from 'react-cookie-consent';
 import LinkedInIcon from "../../static/images/linkedin.inline.svg";
 import MailIcon from "../../static/images/mail.inline.svg";
+import LogoIconScreen from "../../static/images/logo-screen.inline.svg"
+import LogoIconMobile from "../../static/images/logo-mobile.inline.svg"
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -16,13 +17,34 @@ const GlobalStyle = createGlobalStyle`
 `
 
 // styles
-const LogoContainer = styled.div`
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
-  @media screen and (max-width:632px) {
-    width: 100%;
+const LogoContainerScreen = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  width: 40%;
+
+  @media screen and (max-width:768px) {
+    visibility: visible;
+    width: 60%;
+  }
+
+  @media screen and (max-width:480px) {
+    visibility: hidden;
+  }
+`
+
+const LogoContainerMobile = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  visibility: hidden;
+
+  @media screen and (max-width: 480px) {
+    visibility: visible;
   }
 `
 
@@ -60,9 +82,12 @@ const IndexPage = () => {
   return (
       <>
         <GlobalStyle/>
-        <LogoContainer>
-          <StaticImage src="../../static/images/logo.jpg" alt="CoLens"/>
-        </LogoContainer>
+        <LogoContainerScreen>
+          <LogoIconScreen></LogoIconScreen>
+        </LogoContainerScreen>
+        <LogoContainerMobile>
+          <LogoIconMobile></LogoIconMobile>
+        </LogoContainerMobile>
         <footer style={footer}>
           <div style={letsConnectText}> LET'S CONNECT </div>
           <div style={separator}/>
