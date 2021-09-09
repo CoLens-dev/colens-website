@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import CookieConsent from 'react-cookie-consent';
+import { Cookies } from 'react-cookie-consent';
 import LinkedInIcon from "../../static/images/linkedin.inline.svg";
 import MailIcon from "../../static/images/mail.inline.svg";
 import LogoIconScreen from "../../static/images/logo-screen.inline.svg"
@@ -137,7 +138,9 @@ const IndexPage = () => {
           style={{fontSize: "14px", lineHeight: 1.6}}
           cookieName="gatsby-gdpr-google-analytics"
           onAccept={() => {
-            initializeAndTrack(location) 
+            Cookies.set("gatsby-gdpr-google-analytics", "true");
+            Cookies.set("gatsby-gdpr-hotjar", "true");
+            initializeAndTrack(location);
           }}>
           This website stores cookies on your computer. These cookies are used to collect information about how you interact with this website.
           We use this information for analytics and metrics about our visitors on this website. If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
