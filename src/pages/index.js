@@ -125,9 +125,9 @@ const IndexPage = () => {
           <LetsConnectContainer>
             <div style={letsConnectText}> LET'S CONNECT </div>
             <div style={separator}/>
-            <a href="mailto:colens3@gmail.com"> <MailIcon style={icon}/></a>
+            <a href="mailto:colens3@gmail.com" aria-label="email"> <MailIcon style={icon}/></a>
             <div style={separator}/>
-            <a href="https://linkedin.com/company/colens"> <LinkedInIcon style={icon}/></a>
+            <a href="https://linkedin.com/company/colens" aria-label="linkedin"> <LinkedInIcon style={icon}/></a>
           </LetsConnectContainer>
           <Copyright>
             <small>&copy; Copyright {new Date().getFullYear()}, CoLens, All Rights Reserved</small>
