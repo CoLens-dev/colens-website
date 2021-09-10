@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
@@ -107,6 +108,12 @@ const IndexPage = () => {
   const location = useLocation()
   return (
       <>
+        <Helmet htmlAttributes={{lang: 'en'}}>
+          <meta charSet="utf-8" />
+          <title>CoLens</title>
+          <meta name="description" content="Software development company, turning light bulbs into awesome code" />
+        </Helmet>
+
         <GlobalStyle/>
         <LogoContainerScreen>
           <LogoIconScreen></LogoIconScreen>
