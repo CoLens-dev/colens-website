@@ -75,20 +75,11 @@ const LetsConnectContainer = styled.div`
   }
 `
 
-const letsConnectText = {
-  display: "flex",
-  alignItems: "center"
-}
-
-const separator = {
-  borderLeft: "1px solid black",
-  margin: "0 30px",
-}
-
 const icon = {
   display: "flex",
   width: "30px",
   height: "30px",
+  margin: "0 20px",
   justifyContent: "center"
 }
 
@@ -123,10 +114,7 @@ const IndexPage = () => {
         </LogoContainerMobile>
         <Footer>
           <LetsConnectContainer>
-            <div style={letsConnectText}> LET'S CONNECT </div>
-            <div style={separator}/>
             <a href="mailto:colens3@gmail.com" aria-label="email"> <MailIcon style={icon}/></a>
-            <div style={separator}/>
             <a href="https://linkedin.com/company/colens" aria-label="linkedin"> <LinkedInIcon style={icon}/></a>
           </LetsConnectContainer>
           <Copyright>
