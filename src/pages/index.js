@@ -133,8 +133,8 @@ const IndexPage = () => {
           style={{fontSize: "14px", lineHeight: 1.6}}
           cookieName="gatsby-gdpr-google-analytics"
           onAccept={() => {
-            Cookies.set("gatsby-gdpr-google-analytics", "true");
-            Cookies.set("gatsby-gdpr-hotjar", "true");
+            Cookies.set("gatsby-gdpr-google-analytics", "true", { expires: 365 });
+            Cookies.set("gatsby-gdpr-hotjar", "true", { expires: 365 });
             initializeAndTrack(location);
           }}>
           This website stores cookies on your computer. These cookies are used to collect information about how you interact with this website.
