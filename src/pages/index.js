@@ -110,7 +110,8 @@ const IndexPage = () => {
           <LogoIconScreen></LogoIconScreen>
         </LogoContainerScreen>
         <LogoContainerMobile>
-          <LogoIconMobile></LogoIconMobile>
+          <LogoIconScreen></LogoIconScreen>
+          {/* <LogoIconMobile></LogoIconMobile> */}
         </LogoContainerMobile>
         <Footer>
           <LetsConnectContainer>
