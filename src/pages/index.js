@@ -87,7 +87,6 @@ const Copyright = styled.div`
   display: flex;
   padding-right: 20px;
   align-items: center;
-  color: white;
 
   @media screen and (max-width: 780px) {
     padding-right: 0;
