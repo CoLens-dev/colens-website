@@ -8,7 +8,7 @@ import CookieConsent from 'react-cookie-consent';
 import { Cookies } from 'react-cookie-consent';
 import LinkedInIcon from "../../static/images/linkedin.inline.svg";
 import MailIcon from "../../static/images/mail.inline.svg";
-import LogoIconScreen from "../../static/images/logo-screen.inline.svg"
+import LogoIconScreen from "../../static/images/colens_characters.inline.svg"
 import LogoIconMobile from "../../static/images/logo-mobile.inline.svg"
 
 const GlobalStyle = createGlobalStyle`
@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
 const LogoContainerScreen = styled.div`
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   visibility: visible;
@@ -54,7 +54,7 @@ const Footer = styled.div`
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #FFC115;
+  background-color: #7EAEEE;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
