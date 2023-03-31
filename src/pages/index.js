@@ -24,7 +24,7 @@ const LogoContainerScreen = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   visibility: visible;
-  width: 40%;
+  width: 60vh;
 
   @media screen and (max-width:768px) {
     visibility: visible;
